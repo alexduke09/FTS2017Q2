@@ -24,9 +24,8 @@
 
       var viz = new tableauSoftware.Viz(placeholderDiv, url, options);
       setInterval(function () {
-        console.log("Updating Tableau");
-        viz.refreshDataAsync();
-      }, 1800000);
+        document.location = document.location;
+      }, 60000);
     </script>
   </body>
 </html>
