@@ -23,7 +23,10 @@
       };
 
       var viz = new tableauSoftware.Viz(placeholderDiv, url, options);
-      setInterval(function () {viz.refreshDataAsync() }, 1800000);
+      setInterval(function () {
+        console.log("Updating Tableau");
+        viz.refreshDataAsync();
+      }, 1800000);
     </script>
   </body>
 </html>
